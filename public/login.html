@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — Vaara Studio</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">Vaara <span>Studio</span></a>
+      <nav>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container auth-grid">
+    <form id="loginForm" class="card form">
+      <h2>Login</h2>
+      <label>Email<input type="email" name="email" required /></label>
+      <label>Password<input type="password" name="password" required /></label>
+      <button class="btn" type="submit">Login</button>
+      <p class="muted">Demo admin: admin@vaara.studio / Admin@123</p>
+    </form>
+
+    <form id="registerForm" class="card form">
+      <h2>Register</h2>
+      <label>Name<input name="name" required /></label>
+      <label>Email<input type="email" name="email" required /></label>
+      <label>Password<input type="password" name="password" required /></label>
+      <label>Role
+        <select name="role">
+          <option value="client">Client</option>
+          <option value="provider">Provider</option>
+        </select>
+      </label>
+      <button class="btn" type="submit">Create Account</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© Vaara Studio</p></div>
+  </footer>
+</body>
+</html>
